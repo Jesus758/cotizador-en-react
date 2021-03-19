@@ -49,9 +49,15 @@ function App() {
                         <Resumen 
                             datos={datos}
                         />
-                        <Resultado 
+
+                        { !cargando 
+                        
+                        ?  <Resultado 
                             cotizacion={cotizacion}
-                        />
+                            />
+                        
+                        : null }
+                       
 
                 </ContenedorFormulario>
 
